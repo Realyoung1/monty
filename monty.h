@@ -1,6 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#include <stdbool.h>
 #include <sys/stat.h>
 #include <unistd.h>
 #include <sys/types.h>
@@ -10,7 +11,6 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <stdbool.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
