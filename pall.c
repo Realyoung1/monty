@@ -1,10 +1,24 @@
 #include "monty.h"
+
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+
 /**
- * f_pall - prints the stack
- * @head: stack head
+ * f_pall - prints the stacks.
+ * @head: stack heads.
  * @counter: no used
- * Return: no return
+ * Return: no returns.
 */
+
 void f_pall(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
