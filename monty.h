@@ -1,7 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#include <stdbool.h>
 #include <sys/stat.h>
 #include <limits.h>
 #include <unistd.h>
