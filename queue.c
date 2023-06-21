@@ -1,10 +1,24 @@
 #include "monty.h"
+
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+
 /**
- * f_queue - prints the top
- * @head: stack head
- * @counter: line_number
- * Return: no return
+ * f_queue - prints the tops.
+ * @head: stack heads.
+ * @counter: line_numbers.
+ * Return: no returns.
 */
+
 void f_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
@@ -13,11 +27,12 @@ void f_queue(stack_t **head, unsigned int counter)
 }
 
 /**
- * addqueue - add node to the tail stack
- * @n: new_value
- * @head: head of the stack
- * Return: no return
+ * addqueue - add node to the tail stacks.
+ * @n: new_values.
+ * @head: head of the stacks.
+ * Return: no returns.
 */
+
 void addqueue(stack_t **head, int n)
 {
 	stack_t *new_node, *aux;
