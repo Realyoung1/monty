@@ -6,7 +6,6 @@
 #include <sys/types.h>
 #include <string.h>
 #include <stdio.h>
-#include <sys/wait.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <stdlib.h>
