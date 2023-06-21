@@ -1,10 +1,24 @@
 #include "monty.h"
+
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+
 /**
-  *f_sub- sustration
-  *@head: stack head
-  *@counter: line_number
-  *Return: no return
+  *f_sub- sustrations.
+  *@head: stack heads.
+  *@counter: line_numbers.
+  *Return: no returns
  */
+
 void f_sub(stack_t **head, unsigned int counter)
 {
 	stack_t *aux;
