@@ -1,11 +1,25 @@
 #include "monty.h"
+
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+
 /**
- * f_pstr - prints the string starting at the top of the stack,
- * followed by a new
- * @head: stack head
- * @counter: line_number
+ * f_pstr - prints the string starting at the top of the stacks
+ * followed by a new lines of stacks.
+ * @head: this is the stack heads.
+ * @counter: line_numbers.
  * Return: no return
 */
+
 void f_pstr(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
