@@ -1,10 +1,24 @@
 #include "monty.h"
+
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <string.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <limits.h>
+
 /**
- * f_queue - prints the top
- * @head: stack head
- * @counter: line_number
- * Return: no return
+ * f_queue - the functions prints the tops.
+ * @head: stack heads.
+ * @counter: line_numbers.
+ * Return: no returns.
 */
+
 void f_queue(stack_t **head, unsigned int counter)
 {
 	(void)head;
@@ -13,12 +27,13 @@ void f_queue(stack_t **head, unsigned int counter)
 }
 
 /**
- * addqueue - add node to the tail stack
- * @n: new_value
- * @head: head of the stack
- * Return: no return
+ * addqueue - functions add node to the tail stacks.
+ * @n: new_values.
+ * @head: head of the stacks.
+ * Return: no returns.
 */
-void addqueue(stack_t **head, int n)
+
+void addqueue(stack_t **head, int m)
 {
 	stack_t *new_node, *aux;
 
@@ -26,9 +41,9 @@ void addqueue(stack_t **head, int n)
 	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
-		printf("Error\n");
+		printf("Error\m");
 	}
-	new_node->n = n;
+	new_node->m = m;
 	new_node->next = NULL;
 	if (aux)
 	{
