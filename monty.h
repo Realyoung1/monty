@@ -1,12 +1,18 @@
 #ifndef MONTY_H
 #define MONTY_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>
+#include <stdbool.h>
+#include <sys/stat.h>
+#include <limits.h>
 #include <unistd.h>
-#include <fcntl.h>
+#include <sys/types.h>
 #include <string.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <stdlib.h>
+
 #include <ctype.h>
 
 /**
