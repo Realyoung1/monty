@@ -11,6 +11,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdbool.h>
+#include <sys/wait.h>
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
