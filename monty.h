@@ -2,7 +2,6 @@
 #define MONTY_H
 
 #include <sys/stat.h>
-#include <limits.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <string.h>
